@@ -19,7 +19,8 @@
       ],
       "js": [
         "js/vendor.js",
-        "js/content_script.js"
+        "js/content_script.js",
+        "js/inject.js"
       ]
     }
   ],
@@ -27,8 +28,26 @@
     "service_worker": "js/background.js"
   },
   "permissions": [
-    "storage"
+    "storage",
+    "tabs",
+    "webRequest",
+    "activeTab",
+    "unlimitedStorage",
+    "notifications"
   ],
+  "optional_permissions": [
+    "topSites"
+  ],
+  
+
+  "web_accessible_resources": [{
+    "resources": [
+      "js/inject.js"
+    ],
+    "matches": [
+      "<all_urls>"
+    ]
+  }],
   "host_permissions": [
     "<all_urls>"
   ]
