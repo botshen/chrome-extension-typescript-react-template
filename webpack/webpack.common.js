@@ -9,7 +9,8 @@ module.exports = {
       options: path.join(srcDir, 'options.tsx'),
       background: path.join(srcDir, 'background.ts'),
       content_script: path.join(srcDir, 'content_script.tsx'),
-      inject: path.join(srcDir, 'inject.ts'),
+      inject: path.join(srcDir, 'inject.js'),
+      ajaxhook: path.join(srcDir, 'ajaxhook.min.js'),
     },
     output: {
         path: path.join(__dirname, "../dist/js"),

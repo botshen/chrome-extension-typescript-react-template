@@ -1,7 +1,7 @@
 {
-  "name": "chrome-extension-typescript-starter",
+  "name": "fake-mock",
   "version": "1.0.0",
-  "description": "chrome-extension-typescript-starter",
+  "description": "Fake mock",
   "main": "index.js",
   "scripts": {
     "watch": "webpack --config webpack/webpack.dev.js --watch",
@@ -19,8 +19,6 @@
   },
   "dependencies": {
     "@types/chrome": "^0.0.240",
-    "ajax-hook": "^3.0.1",
-    "ajax-hook-botshen": "^1.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Chrome Extension TypeScript Starter",
-  "description": "Chrome Extension, TypeScript, Visual Studio Code",
-  "version": "1.0",
+  "name": "Fake News Detector",
+  "description": "This extension detects fake news and provides a score for the article.",
+  "version": "0.0.1",
   "options_ui": {
     "page": "options.html"
   },
@@ -38,16 +38,17 @@
   "optional_permissions": [
     "topSites"
   ],
-  
-
-  "web_accessible_resources": [{
-    "resources": [
-      "js/inject.js"
-    ],
-    "matches": [
-      "<all_urls>"
-    ]
-  }],
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "resources": [
+        "js/content_script.js",
+        "js/inject.js"
+      ]
+    }
+  ],
   "host_permissions": [
     "<all_urls>"
   ]
